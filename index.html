@@ -2,204 +2,104 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>MD Zaid — Portfolio</title>
-  <meta name="description" content="MD Zaid — Software Engineering student, full-stack developer, and open-source contributor." " />
-  //fonts.googleapis.com">
-  //fonts.gstatic.com" crossorigin>
-  //fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
-  " />
+
+  <link rel="stylesheet" href="style.css">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
+
   <script defer src="script.js"></script>
 </head>
+
 <body>
-  <div class="bg-orb orb-1"></div>
-  <div class="bg-orb orb-2"></div>
-  <div class="grid-overlay"></div>
 
-  <header class="nav">
-    <div class="container nav-inner">
-      <a href="#home" class="brand">Zaid<span>.</span></a>
-      <nav>
-        <a href="#about">About</a>
-        <a href="#experience">Experience</a>
-        <a href="#projects">Projects</a>
-        <a href="#skills">Skills</a>
-        <a href="#contact">Contact</a>
-      </nav>
+<header class="nav">
+  <h2>Zaid.</h2>
+</header>
+
+<section class="hero">
+  <div class="hero-left">
+    <h1>My Portfolio</h1>
+    <p>
+      I'm MD Zaid, a Full Stack Developer and Software Engineering student.
+      I build scalable apps using modern technologies like React, Node.js and AI systems.
+    </p>
+
+    <div class="buttons">
+      <a href="#projects" class="btn">Projects</a>
+      <a href="#contact" class="btn outline">Contact</a>
     </div>
-  </header>
+  </div>
 
-  <main>
-    <section class="hero section" id="home">
-      <div class="container hero-grid">
-        <div class="hero-copy reveal">
-          <div class="pill">Software Engineering Student • Open Source Contributor</div>
-          <h1>Designing scalable software with strong systems thinking and modern frontend polish.</h1>
-          <p class="lead">
-            I’m MD Zaid, a B.Tech CSE student at KIIT with hands-on experience in full-stack development,
-            backend engineering, and open-source collaboration.
-          </p>
-          <div class="hero-actions">
-            <a href="#projects" class="btn btn-primary">Explore Projects</a>
-            <a href="#contact" class="btn btn-ghost">Contact Me</a>
-          </div>
-          <div class="stats-row">
-            <div class="stat"><strong>200+</strong><span>DSA problems</span></div>
-            <div class="stat"><strong>80–90</strong><span>GSSoC score</span></div>
-            <div class="stat"><strong>1</strong><span>featured AI project</span></div>
-          </div>
-        </div>
+  <div class="hero-right">
+    <img src="pfp.jpg" alt="Zaid">
+  </div>
+</section>
 
-        <div class="hero-panel reveal">
-          <div class="profile-card">
-            <div class="avatar">MZ</div>
-            <h2>MD Zaid</h2>
-            <p>Full-Stack Developer</p>
-            <div class="chips">
-              <span>Node.js</span><span>React</span><span>PostgreSQL</span><span>Docker</span>
-            </div>
-            <div class="profile-meta">
-              <div><span>Email</span><strong>zibro83@gmail.com</strong></div>
-              <div><span>GitHub</span><strong>Zaidco</strong></div>
-              <div><span>Location</span><strong>Patna, Bihar</strong></div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
+<section id="about" class="section reveal">
+  <h2>About Me</h2>
+  <p>
+    Software Engineering student with hands-on experience in full-stack development,
+    backend systems, and open-source contributions. I focus on building scalable
+    applications using Node.js, Express.js, React, and PostgreSQL.
+  </p>
+</section>
 
-    <section class="section" id="about">
-      <div class="container reveal">
-        <div class="section-title">
-          <span>About</span>
-          <h2>Professional summary</h2>
-        </div>
-        <div class="glass">
-          <p>
-            I’m a Software Engineering student with hands-on experience in full-stack development,
-            backend systems, and open-source contributions. I build scalable applications using
-            Node.js, Express.js, React, PostgreSQL, and modern CI/CD workflows.
-          </p>
-          <p>
-            I care about clean architecture, fast performance, and interfaces that feel polished and intentional.
-          </p>
-        </div>
-      </div>
-    </section>
+<section id="experience" class="section reveal">
+  <h2>Experience</h2>
 
-    <section class="section" id="experience">
-      <div class="container reveal">
-        <div class="section-title">
-          <span>Experience</span>
-          <h2>Open-source and creative work</h2>
-        </div>
+  <div class="card">
+    <h3>GirlScript Summer of Code 2025</h3>
+    <ul>
+      <li>Worked on frontend interfaces and backend APIs</li>
+      <li>Built features using React, Node.js, Express</li>
+      <li>Collaborated using Git & GitHub</li>
+      <li>Used CI/CD pipelines</li>
+    </ul>
+  </div>
 
-        <div class="cards two-up">
-          <article class="glass card">
-            <h3>GirlScript Summer of Code 2025</h3>
-            <p class="muted">Open Source Contributor • June 2025 – Sept 2025</p>
-            <u
-            <ul>
-              >Worked on frontend interfaces and backend APIs.</l/li>
-              >Built features with JavaScript, React, Node.js, and Express.js.</l/li>
-              >Collaborated via Git and GitHub with strong review workflow discipline.</l/li>
-              >Integrated code through CI/CD pipelines.</li>
-            </ul>
-          </article>
+  <div class="card">
+    <h3>Enactus KIIT / IoT Lab</h3>
+    <ul>
+      <li>Designed social media creatives</li>
+      <li>Improved engagement and branding</li>
+      <li>Worked on event promotions</li>
+    </ul>
+  </div>
+</section>
 
-          <article class="glass card">
-            <h3>College Participation</h3>
-            <p class="muted">Enactus KIIT • IoT Lab, KIIT</p>
-            <u
-            <ul>
-              >Designed visual assets and social media creatives.</l/li>
-              >Maintained branding consistency and improved engagement.</l/li>
-              >Conceptualized and pitched event ideas.</l/li>
-              >Created visually appealing promotional content.</li>
-            </ul>
-          </article>
-        </div>
-      </div>
-    </section>
+<section id="projects" class="section reveal">
+  <h2>Projects</h2>
 
-    <section class="section" id="projects">
-      <div class="container reveal">
-        <div class="section-title">
-          <span>Projects</span>
-          <h2>Featured build</h2>
-        </div>
+  <div class="card">
+    <h3>Finance Tracker AI</h3>
+    <p>
+      AI-powered finance tracker using Node.js, PostgreSQL, Docker and OpenRouter API.
+    </p>
+  </div>
+</section>
 
-        <article class="project glass">
-          <div class="project-left">
-            <p class="project-tag">Featured Project</p>
-            <h3>Finance Tracker AI</h3>
-            <p>
-              An AI-powered finance tracking app built with Node.js, Express.js, PostgreSQL, Docker,
-              and OpenRouter API. It delivers NLP-based insights and scalable backend services.
-            </p>
-            <div class="chips">
-              <span>Node.js</span><span>Express.js</span><span>PostgreSQL</span><span>Docker</span><span>OpenRouter API</span>
-            </div>
-          </div>
-          <div class="project-right">
-            <div class="metric"><strong>3–8 ms</strong><span>cached latency</span></div>
-            <div class="metric"><strong>4–6 sec</strong><span>LLM response time</span></div>
-            <div class="metric"><strong>Scalable</strong><span>architecture</span></div>
-          </div>
-        </article>
-      </div>
-    </section>
+<section id="skills" class="section reveal">
+  <h2>Skills</h2>
 
-    <section class="section" id="skills">
-      <div class="container reveal">
-        <div class="section-title">
-          <span>Skills</span>
-          <h2>Technical stack</h2>
-        </div>
+  <p>
+    Java, JavaScript, Python, C <br>
+    React, HTML, CSS <br>
+    Node.js, Express.js <br>
+    PostgreSQL, MongoDB <br>
+    Git, CI/CD
+  </p>
+</section>
 
-        <div class="skills-grid">
-          <div class="glass skill-box"><h3>Languages</h3><p>Java, JavaScript, Python, C</p></div>
-          <div class="glass skill-box"><h3>Frontend</h3><p>HTML5, CSS3, React</p></div>
-          <div class="glass skill-box"><h3>Backend</h3><p>Node.js, Express.js, BullMQ</p></div>
-          <div class="glass skill-box"><h3>Databases</h3><p>PostgreSQL, MongoDB, Redis</p></div>
-          <div class="glass skill-box"><h3>Testing</h3><p>Cucumber.js, Vitest</p></div>
-          <div class="glass skill-box"><h3>Tools</h3><p>Git, GitHub Actions, CI/CD, Figma</p></div>
-        </div>
-      </div>
-    </section>
+<section id="contact" class="section reveal">
+  <h2>Contact</h2>
 
-    <section class="section" id="achievements">
-      <div class="container reveal">
-        <div class="section-title">
-          <span>Achievements</span>
-          <h2>Consistency with proof</h2>
-        </div>
-        <div class="glass achievement">
-          <h3>Competitive programming</h3>
-          <p>Solved 200+ Data Structures and Algorithms problems across competitive programming platforms.</p>
-        </div>
-      </div>
-    </section>
+  <p>Email: zibro83@gmail.com</p>
+  <p>GitHub: https://github.com/Zaidco</p>
+</section>
 
-    <section class="section" id="contact">
-      <div class="container reveal">
-        <div class="section-title">
-          <span>Contact</span>
-          <h2>Let’s build something sharp</h2>
-        </div>
-        <div class="glass contact">
-          <a href="mailto:zibro83@gmail.com">zibro83@gmail.com</a>
-          <a href="https://github.com/Zaidco" target="_blank">github.com/Zaidco</a>
-          <a href="https://www.linkedin.com/" target="_blank">LinkedIn</a>
-        </div>
-      </div>
-    </section>
-  </main>
-
-  <footer class="footer">
-    <div class="container">
-      <p>© 2026 MD Zaid. Crafted for GitHub Pages.</p>
-    </div>
-  </footer>
 </body>
 </html>
