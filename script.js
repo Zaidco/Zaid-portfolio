@@ -1,1 +1,11 @@
-console.log("Portfolio loaded 🚀");
+const links = document.querySelectorAll('a[href^="#"]');
+
+links.forEach(link => {
+  link.addEventListener('click', e => {
+    const target = document.querySelector(link.getAttribute('href'));
+    if (target) {
+      e.preventDefault();
+      target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+    }
+  });
+});
