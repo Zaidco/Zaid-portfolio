@@ -1,11 +1,9 @@
-const links = document.querySelectorAll('a[href^="#"]');
+const items = document.querySelectorAll('.reveal');
 
-links.forEach(link => {
-  link.addEventListener('click', e => {
-    const target = document.querySelector(link.getAttribute('href'));
-    if (target) {
-      e.preventDefault();
-      target.scrollIntoView({ behavior: 'smooth', block: 'start' });
-    }
+const io = new IntersectionObserver((entries) => {
+  entries.forEach(entry => {
+    if (entry.isIntersecting) entry.target.classList.add('show');
   });
-});
+}, { threshold: 0.14 });
+
+items.forEach(el => io.observe(el));
